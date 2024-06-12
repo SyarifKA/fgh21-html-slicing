@@ -1,10 +1,11 @@
 @font-face {
-    font-family: poppins;
-    src: url(../fonts/Poppins.woff);
-  }
+    font-family: 'poppins';
+        src: url(../fonts/Poppins-Regular.woff);
+    }
 
 body{
     font-family: poppins;
+    overflow: hidden;
 }
 
 .container{
@@ -14,17 +15,17 @@ body{
 .container .wallpaper{
     width: 60%;
     background-color: #3366FF;
-    padding: 100px 200px;
+    padding: 100px 220px;
 }
 
 .container .wallpaper img{
-width: 300px;
-height: 300px;
+width: 400px;
+    height: 350px;
 }
 
 .container .main{
     width: 40%;
-    padding: 70px 50px;
+    padding: 50px 50px;
 }
 
 .container .main img{
@@ -35,22 +36,22 @@ height: 300px;
 .container .main .wetick{
     color: #3366FF;
     font-size: 24px;
+    font-weight: 600;
 }
 
 .container .main .tick{
     color: #FC1055;
+    letter-spacing: 1px;
 }
 
 .container .main .sign-in{
     margin-top: 20px;
-    font-weight: 600;
     font-size: 24px;
     color: #373A42;
 }
 
 .container .main .welcome{
     margin-top: 10px;
-    font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.5px;
     color: #373A42;
@@ -101,13 +102,17 @@ height: 300px;
 }
 
 .container .main .logo-alt{
+    margin-top: 10px;
     text-align: center;
     display: flex;
+    justify-content: center;
+        gap: 10px;
 }
 
 .container .main .logo-alt img{
     width: 20px;
     height: 20px;
     padding: 10px 30px;
-    border: 1px solid blue;
+    border: 1px solid #3366FF;
+        border-radius: 6px;
 }
