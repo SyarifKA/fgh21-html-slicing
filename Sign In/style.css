@@ -1,0 +1,113 @@
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins.woff);
+  }
+
+body{
+    font-family: poppins;
+}
+
+.container{
+    display: flex;
+}
+
+.container .wallpaper{
+    width: 60%;
+    background-color: #3366FF;
+    padding: 100px 200px;
+}
+
+.container .wallpaper img{
+width: 300px;
+height: 300px;
+}
+
+.container .main{
+    width: 40%;
+    padding: 70px 50px;
+}
+
+.container .main img{
+    width: 47.5px;
+    height: 50px;
+}
+
+.container .main .wetick{
+    color: #3366FF;
+    font-size: 24px;
+}
+
+.container .main .tick{
+    color: #FC1055;
+}
+
+.container .main .sign-in{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #373A42;
+}
+
+.container .main .welcome{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #373A42;
+}
+
+
+.container .main .form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .main .form input{
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 1px solid #C1C5D0;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.container .main .forgot{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #3366FF;
+    text-align: right;
+}
+
+.container .main .button{
+    background-color: #3366FF;
+    color: white;
+    box-shadow: 0px 8px 10px 0px #2395FF4D;
+    border: none;
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+.container .main .or-sign{
+    margin-top: 20px;
+    text-align: center;
+    color: #373A42;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.container .main .logo-alt{
+    text-align: center;
+    display: flex;
+}
+
+.container .main .logo-alt img{
+    width: 20px;
+    height: 20px;
+    padding: 10px 30px;
+    border: 1px solid blue;
+}
