@@ -113,6 +113,11 @@ width: 400px;
     width: 20px;
     height: 20px;
     padding: 10px 30px;
+    border-radius: 6px;
+    }
+    
+    .container .main .logo-alt button {
     border: 1px solid #3366FF;
-        border-radius: 6px;
+    border-radius: 6px;
+    background-color: #fff;
 }
