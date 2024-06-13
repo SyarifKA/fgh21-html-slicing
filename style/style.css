@@ -292,8 +292,8 @@ button {
     margin-top: 25px;
     display: flex;
     gap: 10px;
-    margin-left: 30px;
-    position: absolute;
+    margin-left: 50px;
+    margin-right: -50px;
 }
     
 .content-film .film:nth-child(odd) {
@@ -308,34 +308,48 @@ button {
     height: 376px;
     background-size: cover;
     border-radius: 20px;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.4);
     background-color: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 3.17%, #101426 100%);
     background-blend-mode: multiply;
     display: flex;
     flex-direction: column;
     color: #fff;
     justify-content: center;
+    /* position: relative; */
 }
-    
-.content-film .film .day {
+
+.content-film .film .shadow{
+    width: 260px;
+    height: 376px;
+    border-radius: 20px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 3.17%, #101426 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.content-film .film .shadow .day {
     font-size: 14px;
     gap: 20px;
     margin-left: 25px;
 }
     
-.content-film .film .title {
+.content-film .film .shadow .title {
     font-size: 22px;
     letter-spacing: 2px;
     font-weight: 600;
     margin-left: 25px;
 }
     
-.content-film .film .people {
+.content-film .film .shadow .people {
     display: flex;
     margin-left: 35px;
     margin-top: 26px;
+    margin-bottom: 50px;
 }
     
-.content-film .film .people div {
+.content-film .film .shadow .people div {
     position: relative;
     width: 28px;
     height: 29px;
@@ -347,24 +361,24 @@ button {
     box-sizing: border-box;
 }
     
-.content-film .film .people .people1 {
+.content-film .film .shadow .people .people1 {
     background-image: url(../assets/people1.png);
     background-size: cover;
     border: 1px solid white;
 }
-.content-film .film .people .people2 {
+.content-film .film .shadow .people .people2 {
     background-image: url(../assets/people2.png);
     background-size: cover;
     border: 1px solid white;
 }
     
-.content-film .film .people .people3 {
+.content-film .film .shadow .people .people3 {
     background-image: url(../assets/people3.png);
     background-size: cover;
     border: 1px solid white;
 }
 
-.content-film .film .people .people4 {
+.content-film .film .shadow .people .people4 {
     background-image: url(../assets/people4.png);
     background-size: cover;
 }
@@ -379,4 +393,28 @@ button {
     text-align: center;
     letter-spacing: 0.5px;
     font-weight: 500;
+}
+
+.row-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.row-button button{
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0px 2px 15px 0px rgba(26, 60, 68, 0.08);
+    font-size: 20px;
+}
+
+.row-button .button-left{
+    background-color: #fff;
+    color: rgba(193, 197, 208, 1);
+}
+
+.row-button .button-right{
+    color: #fff;
 }
