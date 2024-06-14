@@ -8,7 +8,7 @@
 body {
     font-family: poppins;
     margin: 0;
-    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 
 button {
@@ -153,6 +153,7 @@ button {
     padding: 5px 10px;
     align-self: center;
     font-weight: 600;
+    z-index: 99;
 }
 
 .navbar .logo-wetick {
@@ -227,7 +228,7 @@ button {
 
 .background {
     height: 750px;
-    background-image: url(../assets/bubble.png);
+    background-image: url(../image/bubble.png);
     background-color: #3366FF;
     background-size: cover;
     background-repeat: no-repeat;
@@ -294,28 +295,27 @@ button {
     gap: 10px;
     margin-left: 50px;
     margin-right: -50px;
+    overflow-x: scroll;
 }
     
 .content-film .film:nth-child(odd) {
-    background-image: url(../assets/film1.png);
+    background-image: url(../image/film1.png);
 }
 .content-film .film:nth-child(even) {
-    background-image: url(../assets/film2.png);
+    background-image: url(../image/film2.png);
 }
                 
 .content-film .film {
     width: 260px;
     height: 376px;
-    background-size: cover;
+    background-size: contain;
     border-radius: 20px;
-    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.4);
-    background-color: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 3.17%, #101426 100%);
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.1);
     background-blend-mode: multiply;
     display: flex;
     flex-direction: column;
     color: #fff;
     justify-content: center;
-    /* position: relative; */
 }
 
 .content-film .film .shadow{
@@ -362,24 +362,24 @@ button {
 }
     
 .content-film .film .shadow .people .people1 {
-    background-image: url(../assets/people1.png);
+    background-image: url(../image/people1.png);
     background-size: cover;
     border: 1px solid white;
 }
 .content-film .film .shadow .people .people2 {
-    background-image: url(../assets/people2.png);
+    background-image: url(../image/people2.png);
     background-size: cover;
     border: 1px solid white;
 }
     
 .content-film .film .shadow .people .people3 {
-    background-image: url(../assets/people3.png);
+    background-image: url(../image/people3.png);
     background-size: cover;
     border: 1px solid white;
 }
 
 .content-film .film .shadow .people .people4 {
-    background-image: url(../assets/people4.png);
+    background-image: url(../image/people4.png);
     background-size: cover;
 }
 
@@ -419,18 +419,28 @@ button {
     color: #fff;
 }
 
-.city{
+.city {
     display: flex;
     flex-direction: column;
-    background-image: url(../assets/bubble.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 175px;
     height: 700px;
     background-color: #3366FF;
     border-radius: 50px;
+    position: relative;
+}
+
+.city .city-background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    transform: scaleY(-1);
+}
+
+.city .content{
+    position: absolute;
     padding: 74px 68px;
 }
 
@@ -444,6 +454,9 @@ button {
 
 .city .city-one{
     display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .city .city-one .text{
@@ -460,10 +473,48 @@ button {
 .city .city-one .location img{
     width: 230px;
     height: 140px;
+    border-radius: 20px;
 }
 
 .city .city-one .location span{
-    justify-content: center;
     text-align: center;
     color: #fff;
+    margin-top: 20px;
+}
+
+.city .content .city-two{
+    display: flex;
+}
+
+.city .content .city-button-end{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.city .content .city-button-end .button{
+    width: 255px;
+    height: 40px;
+    background-color: #fff;
+    color:rgba(51, 102, 255, 1);
+    font-size: 14px;
+    padding: 10px 38px;
+    border-radius: 10px;
+}
+
+.event-calendar .category{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.event-calendar .category div{
+    color:rgba(193, 197, 208, 1);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.event-calendar .category div:hover{
+    color: #3366FF;
 }
