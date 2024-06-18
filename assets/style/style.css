@@ -1145,3 +1145,283 @@ button {
     height: 40%;
     padding-left: 50px;
 }
+
+
+/* CSS Profile */
+
+.profile{
+    display: flex;
+    margin-top: 140px;
+    margin-left: 70px;
+    margin-right: 70px;
+    gap: 58px;
+}
+
+.profile .profile-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile .profile-menu .profile-photo {
+    /* flex: 1; */
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.profile .profile-menu .profile-photo .avatar {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    display: flex;
+}
+
+.profile .profile-menu .profile-photo .avatar .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+}
+
+.profile .profile-menu .profile-photo .avatar::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background: linear-gradient(white, white),
+                linear-gradient(225.52deg, #3366FF 1.55%, #2395FF 1.55%, #2395FF 1.56%, #884DFF 88.86%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    z-index: -1;
+}
+
+.profile .profile-menu .profile-photo .text{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile .profile-menu .profile-photo .text span:last-child{
+    color:rgba(55, 58, 66, 0.75);
+    font-size: 12px;
+}
+
+.profile .profile-menu .profile-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 14px;
+}
+
+.profile .profile-menu .profile-detail .detail{
+    display: flex;
+    gap: 25px;
+    color: rgba(55, 58, 66, 1);
+    font-size: 14px;
+}
+
+.profile .profile-menu .profile-detail .detail:nth-child(2){
+    margin-left: 50px;
+}
+.profile .profile-menu .profile-detail .detail:nth-child(3){
+    margin-left: 50px;
+}
+.profile .profile-menu .profile-detail .detail:nth-child(4){
+    margin-left: 50px;
+}
+
+.profile .profile-menu .profile-detail .detail .edit{
+    color: rgba(51, 102, 255, 1);
+}
+
+.profile .profile-menu .profile-detail .detail .logout{
+    color:rgba(240, 56, 0, 1);
+}
+
+.profile .profile-content{
+    width: 926px;
+    height: 825px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 50px;
+    display: flex;
+}
+
+.profile .profile-content .profile-title{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile .profile-content .profile-title .title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.profile .profile-content .profile-title .bio{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.profile .profile-content .bio .content-bio{
+    display: flex;
+    width: 100%;
+}
+
+.profile .profile-content .bio .content-bio .criteria{
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.profile .profile-content .bio .content-bio .edit{
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.profile .profile-content .bio .content-bio div:nth-child(2){
+    color:rgba(119, 119, 119, 1);
+    font-size: 14px;
+}
+
+.profile .profile-content .bio .content-bio .input input{
+    border: 1px solid rgba(193, 197, 208, 1);
+    border-radius: 15px;
+    height: 35px;
+    padding-left: 15px;
+}
+.profile .profile-content .bio .content-bio .input select{
+    border: 1px solid rgba(193, 197, 208, 1);
+    border-radius: 15px;
+    height: 35px;
+    padding-left: 15px;
+    color:rgba(119, 119, 119, 1);
+    font-size: 14px;
+    display: flex;
+    width: 100%;
+}
+
+.profile .profile-content .bio .content-bio .input{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.profile .profile-content .profile-title .profile-button button{
+    width: 315px;
+    height: 61px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 15px;
+    box-shadow: 0px 8px 10px 0px rgba(35, 149, 255, 0.3);
+}
+
+.profile .profile-content .edit-photo {
+    width: 40%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    border-left: 1px solid rgba(193, 197, 208, 0.25);
+}
+
+.profile .profile-content .edit-photo .avatar {
+    margin-bottom: 50px;
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+    justify-self: center;
+}
+
+.profile .profile-content .edit-photo .avatar .layer-profile {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .profile-content .edit-photo .avatar .layer-profile .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.profile .profile-content .edit-photo .avatar .layer-profile::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background: linear-gradient(white, white),
+                linear-gradient(225.52deg, #3366FF 1.55%, #2395FF 1.55%, #2395FF 1.56%, #884DFF 88.86%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-color: linear-gradient(0deg, #373A42, #373A42);
+}
+
+.profile .profile-content .edit-photo .avatar .layer-profile::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 2;
+}
+.profile .profile-content .edit-photo .avatar .layer-profile .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.profile .profile-content .edit-photo .avatar .layer-profile .camera-logo {
+    width: 20px;
+    height: auto;
+}
+
+.profile .profile-content .edit-photo .edit-button{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile .profile-content .edit-photo .edit-button button{
+    width: 255px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #3366FF;
+    border: 1px solid rgba(51, 102, 255, 1)
+}
+
+.profile .profile-content .edit-photo .edit-button div{
+    font-size: 12px;
+    color: rgba(55, 58, 66, 0.75);
+}
