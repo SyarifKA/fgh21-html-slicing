@@ -1217,14 +1217,27 @@ button {
     font-size: 14px;
 }
 
+.profile .profile-menu .profile-detail s{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 14px;
+}
+
 .profile .profile-menu .profile-detail .detail{
     display: flex;
     gap: 25px;
     color: rgba(55, 58, 66, 1);
     font-size: 14px;
 }
+.profile .profile-menu .profile-detail .detail del{
+    display: flex;
+    gap: 25px;
+    color: rgba(55, 58, 66, 1);
+    font-size: 14px;
+}
 
-.profile .profile-menu .profile-detail .detail:nth-child(2){
+.profile .profile-menu .profile-detail del{
     margin-left: 50px;
 }
 .profile .profile-menu .profile-detail .detail:nth-child(3){
