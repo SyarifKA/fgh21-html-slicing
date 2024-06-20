@@ -272,6 +272,14 @@ button {
     .city{
         flex-direction: column;
         width: 100%;
+        padding: 0;
+    }
+    .city .content{
+        padding: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        left: 0;
     }
     .city .city-one{
         flex-direction: column;
@@ -282,12 +290,14 @@ button {
         justify-content: center;
         align-items: center;
     }
-    .city .city-one .location:not(:nth-child(2)){
+    .city .content .city-one .location:not(:nth-child(2)){
         display: none;
+    }
+    .card-second{
+        overflow-x: scroll;
     }
     .banner .banner-company .category{
         flex-direction: column;
-        height: 100%;
     }
     .footer{
         display: flex;
@@ -629,10 +639,11 @@ button {
 }
 
 .city {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
-    margin-right: 50px;
+    /* margin-left: 50px;
+    margin-right: 50px; */
     margin-top: 175px;
     height: 700px;
     background-color: #3366FF;
@@ -652,7 +663,6 @@ button {
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 74px 68px;
 }
 
 .city .city-button .button{
@@ -661,40 +671,45 @@ button {
     border-radius: 30px;
     font-size: 12px;
     padding: 6px 30px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
-.city .city-one{
+.city .content .city-one *{
+    flex: 1;
+}
+
+.city .content .city-one{
+    width: 100%;
     display: flex;
     margin-top: 25px;
     justify-content: space-between;
-    gap: 20px;
+    /* gap: 20px; */
 }
 
-.city .city-one .text{
+.city .content .city-one .text{
     font-size: 36px;
     color: #fff;
     font-weight: 600;
 }
 
-.city .city-one .location{
+.city .content .city-one .location{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.city .city-one .location img{
+.city .content .city-one .location img{
     width: 230px;
     height: 140px;
     border-radius: 20px;
 }
 
-.city .city-one .location span{
+.city .content .city-one .location span{
     text-align: center;
+    justify-content: center;
     color: #fff;
     margin-top: 20px;
-}
-
-.city .content .city-two{
-    display: flex;
 }
 
 .city .content .city-button-end{
@@ -721,8 +736,8 @@ button {
 
 .event-calendar .category{
     display: flex;
-    justify-content: center;
-    gap: 100px;
+    justify-content: space-around;
+    gap: 20px;
     margin-top: 50px;
     width: 100%;
 }
@@ -738,11 +753,11 @@ button {
 }
 
 .card-second{
+    width: 100%;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-shrink: 0;
 }
 
 .card-second .card-end{
