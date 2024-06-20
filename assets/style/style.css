@@ -9,7 +9,7 @@ body {
     font-family: poppins;
     background-color: rgba(244, 247, 255, 1);
     margin: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 button {
@@ -109,13 +109,15 @@ button {
     flex-direction: row;
     background-color: #fff;
     padding: 5px 10px;
-    align-self: center;
     font-weight: 600;
     z-index: 99;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar .logo-wetick {
     flex: 1;
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -140,10 +142,10 @@ button {
 .navbar .navbar-opt {
     flex: 1;
     display: flex;
-    flex-direction: row;
     color: #373A42;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-self: center;
+    gap: 20px;
 }
 
 .navbar .navbar-opt .home:hover {
@@ -161,7 +163,6 @@ button {
 .navbar .navbar-button {
     flex: 1;
     display: flex;
-    flex-direction: row;
     gap: 15px;
     align-items: center;
     justify-content: center;
@@ -213,6 +214,67 @@ button {
     background-origin: border-box;
     background-clip: content-box, border-box;
     z-index: -1;
+}
+
+/* media query */
+.navbar > .main > div:last-child{
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .navbar{
+        width: 100%;
+        flex-direction: column;
+        height: unset;
+        padding: 20px;
+        gap: 10px;
+    }
+    .navbar > .main > div:last-child{
+        display: unset;
+    }
+    .navbar > .main{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar .navbar-opt{
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+    .navbar .navbar-button{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+    .navbar .navbar-button button{
+        width: 100% !important;
+    }
+    .background .image{
+        justify-content: center;
+    }
+    .city .city-one{
+        flex-direction: column;
+    }
+    .banner .banner-company .category{
+        flex-direction: column;
+        height: 100%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .footer1{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+#menu{
+    background-color: transparent;
 }
 
 /* CSS Sign */
@@ -341,6 +403,7 @@ button {
 /* CSS Main Page */
 
 .background {
+    display: flex;
     height: 750px;
     width: 100%;
     background-color: #3366FF;
@@ -407,7 +470,8 @@ button {
 .event-calendar .calendar .active:after {
     content: '\00BA';
 }
-    
+
+/* content */
 .content-film {
     margin-top: 25px;
     display: flex;
@@ -560,6 +624,8 @@ button {
 
 .city .content{
     position: absolute;
+    width: 100%;
+    height: 100%;
     padding: 74px 68px;
 }
 
@@ -621,11 +687,18 @@ button {
     border-radius: 10px;
 }
 
+.event-calendar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .event-calendar .category{
     display: flex;
     justify-content: center;
     gap: 100px;
     margin-top: 50px;
+    width: 100%;
 }
 
 .event-calendar .category div{
@@ -643,6 +716,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .card-second .card-end{
@@ -653,6 +727,7 @@ button {
     flex-direction: column;
     border-radius: 40px;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .card-second .card-end img{
@@ -740,7 +815,7 @@ button {
 .banner{
     display: flex;
     flex-direction: column;
-    width: 1366px;
+    width: 100%;
     height: 450px;
     background-color:rgba(55, 58, 66, 1);
     margin-top: 175px;
@@ -798,28 +873,6 @@ button {
     display: flex;
     justify-content: center;
     gap: 60px;
-}
-
-@media (max-width : 992px) {
-    .navbar{
-        flex-direction: column;
-        height: unset;
-        padding: 20px;
-        gap: 10px;
-    }
-    .navbar .navbar-opt{
-        flex-direction: column;
-        text-align: center;
-    }
-    .navbar .navbar-button{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 5px;
-    }
-    .navbar .navbar-button{
-        width: 100% !important;
-    }
 }
 
 /* Booking Page */
