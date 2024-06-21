@@ -328,6 +328,26 @@ button {
     .container > div:last-child{
         width: 100%;
     }
+    /* Responsive booking-page */
+    .content-book{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .content-book .image-seat img{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .content-book .order{
+        /* margin: 0 20px; */
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+    .content-book .order .button-checkout{
+        justify-content: center;
+    }
 }
 
 #menu{
@@ -954,19 +974,20 @@ button {
     margin: auto;
     margin-top: 140px;
     margin-bottom: 100px;
-    width: 1126px;
-    height: 850px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: auto;
+    height: 100%;
     border-radius: 30px;
     display: flex;
-    padding-right: 50px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .content-book .image-seat {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .content-book .image-seat img {
@@ -975,16 +996,20 @@ button {
 }
 
 .content-book .order {
-    flex: 1;
     display: flex;
     flex-direction: column;
     margin-top: 78px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    width: 100%;
+    height: 100%;
 }
 
 .content-book .order .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .content-book .order .title .title-ticket {
@@ -1020,6 +1045,7 @@ button {
     flex-direction: column;
     gap: 50px;
     margin-top: 50px;
+    width: 100%;
 }
 
 .content-book .order .quantity .quantity-price:nth-child(3){
@@ -1145,6 +1171,11 @@ button {
 
 .content-book .order .checkout .ticket :last-child{
     color: #3366FF;
+}
+
+.content-book .order .button-checkout{
+    width: 100%;
+    display: flex;
 }
 
 .content-book .order .button-checkout button{
