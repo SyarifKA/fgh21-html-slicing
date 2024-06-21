@@ -229,6 +229,7 @@ button {
 }
 
 @media (max-width: 992px) {
+    /* Responsive home-page */
     .navbar{
         width: auto;
         flex-direction: column;
@@ -320,6 +321,13 @@ button {
         flex-direction: column;
         gap: 20px;
     }
+    /* Responsive Sign in */
+    .container > div:first-child{
+        display: none;
+    }
+    .container > div:last-child{
+        width: 100%;
+    }
 }
 
 #menu{
@@ -336,9 +344,6 @@ button {
 .container .wallpaper {
     width: 70%;
     background-color: #3366FF;
-}
-
-.container .wallpaper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -391,6 +396,23 @@ button {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.container .main .form .pass{
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+
+.container .main .form .pass input{
+    box-sizing: border-box;
+}
+
+.container .main .form .pass button{
+    position: absolute;
+    right: 10px;
+    background-color: transparent;
 }
 
 .container .main .form input {
