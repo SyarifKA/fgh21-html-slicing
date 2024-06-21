@@ -293,8 +293,18 @@ button {
     .city .content .city-one .location:not(:nth-child(2)){
         display: none;
     }
+    .event-calendar .event-u{
+        text-align: center;
+    }
+    .event-calendar .category{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .card-second{
         overflow-x: scroll;
+    }
+    .banner .banner-company .banner-title{
+        text-align: center;
     }
     .banner .banner-company .category{
         display: flex;
@@ -644,8 +654,6 @@ button {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* margin-left: 50px;
-    margin-right: 50px; */
     margin-top: 175px;
     height: 700px;
     background-color: #3366FF;
@@ -686,7 +694,6 @@ button {
     display: flex;
     margin-top: 25px;
     justify-content: space-between;
-    /* gap: 20px; */
 }
 
 .city .content .city-one .text{
@@ -860,28 +867,25 @@ button {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color:rgba(55, 58, 66, 1);
     margin-top: 175px;
     margin-bottom: 170px;
     position: relative;
 }
 
 .banner .banner-company{
-    /* height: 100%; */
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
     background-color:rgba(55, 58, 66, 1);
+    z-index: -1;
 }
 
 .banner .banner-background{
     width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
     transform: rotate(180deg);
-    z-index: 2;
     background-size: cover;
 }
 
