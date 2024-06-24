@@ -13,29 +13,29 @@
 
     <div class="container">
         <div class="wallpaper">
-            <img src="/assets/image/Group 12.png" alt="">
+            <img src="/assets/image/character.png" alt="">
         </div>
         <div class="main">
             <div class="logo">
                 <span>
-                    <img src="/assets/image/Fill 1.png" alt="">
+                    <img src="/assets/image/logo-wetick.png" alt="">
                 </span>
                 <span class="wetick">We<span class="tick">tick</span></span>
             </div>
             <h1 class="sign-in">Sign In</h1>
             <div class="welcome">Hi, Welcome back to Urticket!</div>
-            <form class="form">
-                <input type="text" placeholder="Username">
-                <input type="email" placeholder="Email">
+            <form class="form" onsubmit="processData(event)">
+                <input type="text" name="username" placeholder="Username">
+                <input type="email" name="email" placeholder="Email">
                 <div class="pass">
-                    <input type="password" placeholder="Password">
+                    <input type="password" name="password" placeholder="Password">
                     <button>
                         <img src="/assets/image/eye.png" alt="">
                     </button>
                 </div>
             </form>
             <div class="forgot">Forgot Password?</div>
-            <button class="button">Sign In</button>
+            <button class="button" type="submit">Sign In</button>
             <div class="or-sign">or sign in with</div>
             <div class="logo-alt">
                 <button><img src="/assets/image/google.png" alt=""></button>
@@ -44,6 +44,20 @@
         </div>
     </div>
 
+    <script>
+
+        function processData(event){
+            event.preventDefault()
+            const username = event.target.username.value
+            const email = event.target.email.value
+            const password = event.target.password.value
+            if(username === 'syarif' && email === 'syarif@gmail.com' && password === '1234'){
+                const d = alert('Login Success!')
+            }else{
+                alert('Data yang Anda masukkan salah!')
+            }
+        }
+    </script>
 
 </body>
 
