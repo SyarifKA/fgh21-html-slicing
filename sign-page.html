@@ -29,35 +29,22 @@
                 <input type="email" name="email" placeholder="Email">
                 <div class="pass">
                     <input type="password" name="password" placeholder="Password">
-                    <button>
-                        <img src="/assets/image/eye.png" alt="">
+                    <button type="button">
+                        <img src="/assets/image/eye.png" alt="Logo-eye">
                     </button>
                 </div>
+                <div class="forgot">Forgot Password?</div>
+                <button class="button" type="submit">Sign In</button>
             </form>
-            <div class="forgot">Forgot Password?</div>
-            <button class="button" type="submit">Sign In</button>
             <div class="or-sign">or sign in with</div>
             <div class="logo-alt">
-                <button><img src="/assets/image/google.png" alt=""></button>
-                <button><img src="/assets/image/fb.png" alt=""></button>
+                <button type="button"><img src="/assets/image/google.png" alt="Logo-google"></button>
+                <button type="button"><img src="/assets/image/fb.png" alt="Logo-fb"></button>
             </div>
         </div>
     </div>
 
-    <script>
-
-        function processData(event){
-            event.preventDefault()
-            const username = event.target.username.value
-            const email = event.target.email.value
-            const password = event.target.password.value
-            if(username === 'syarif' && email === 'syarif@gmail.com' && password === '1234'){
-                const d = alert('Login Success!')
-            }else{
-                alert('Data yang Anda masukkan salah!')
-            }
-        }
-    </script>
+    <script src="/assets/style/script.js"></script>
 
 </body>
 
