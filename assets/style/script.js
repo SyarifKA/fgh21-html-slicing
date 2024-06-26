@@ -70,31 +70,47 @@ footertext.forEach((item, index) => {
 
 // Card
 const contentFilm = document.getElementById('content-film')
-const film = document.createElement('div')
-const spanShadow = document.createElement('span')
-const avatar = ['people1', 'people2', 'people3', 'people4']
-const shadowImage = ['day', 'title', 'people']
 
-contentFilm.appendChild(film)
-film.classList.add('film')
-film.appendChild(spanShadow)
+const eventFilm = document.createElement('div')
+eventFilm.classList.add('film')
+
+const spanShadow = document.createElement('span')
 spanShadow.classList.add('shadow')
 
-for (let i = 0; i < shadowImage.length; i++){
-    const listContent = document.createElement('div')
-    listContent.classList.add(shadowImage[i])
-    spanShadow.appendChild(listContent)
-    if (shadowImage[i] === 'people') {
-        for (let j = 0; j < avatar.length; j++){
-            const contentPeople = document.createElement('div')
-            contentPeople.classList.add(avatar[j])
-            shadowImage.appendChild(contentPeople)
-            if (avatar[j] === 'people4') {
-                const textSpan = document.createElement('span')
-                textSpan.textContent = '+62'
-                textSpan.classList.add('layer')
-                avatar[j].appendChild(textSpan)
-            }
-        }
-    }
-}
+const dayEvent = document.createElement('div')
+dayEvent.classList.add('day')
+dayEvent.textContent = 'Wed, 15 Nov, 4:00 PM'
+
+const titleEvent = document.createElement('div')
+titleEvent.classList.add('title')
+titleEvent.textContent = 'Sights & Sounds Exhibition'
+
+const peopleEvent = document.createElement('div')
+peopleEvent.classList.add('people')
+
+const people1 = document.createElement('div')
+people1.classList.add('people1')
+
+const people2 = document.createElement('div')
+people2.classList.add('people2')
+
+const people3 = document.createElement('div')
+people3.classList.add('people3')
+
+const people4 = document.createElement('div')
+people4.classList.add('people4')
+
+const spanLayer = document.createElement('span')
+spanLayer.classList.add('layer')
+spanLayer.textContent = '+62'
+
+people4.appendChild(spanLayer)
+peopleEvent.appendChild(people1)
+peopleEvent.appendChild(people2)
+peopleEvent.appendChild(people3)
+peopleEvent.appendChild(people4)
+spanShadow.appendChild(dayEvent)
+spanShadow.appendChild(titleEvent)
+spanShadow.appendChild(peopleEvent)
+eventFilm.appendChild(spanShadow)
+contentFilm.appendChild(eventFilm)

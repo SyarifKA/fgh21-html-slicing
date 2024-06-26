@@ -603,9 +603,13 @@ button {
     
 .content-film .film:nth-child(odd) {
     background-image: url(../image/film1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .content-film .film:nth-child(even) {
     background-image: url(../image/film2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
                 
 .content-film .film {
