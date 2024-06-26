@@ -38,6 +38,17 @@ menuBtn.onclick = () => {
     }
 }
 
+// Button Navbar
+const btnToLogin = document.getElementById('to-login')
+btnToLogin.onclick = () => {
+    window.location = 'sign-page.html'
+}
+
+const btnToSignup = document.getElementById('to-signup')
+btnToSignup.onclick = () => {
+    window.location = 'sign-page.html'
+}
+
 // Footer
 function appendElement(elementId, contentChild) {
     const container = document.getElementById(elementId)
@@ -108,6 +119,9 @@ const events = [
 ]
 
 events.forEach(event => {
+    const linkPage = document.createElement('a')
+    linkPage.setAttribute('href', 'booking-page.html')
+
     const eventFilm = document.createElement('div')
     eventFilm.classList.add('film')
 
@@ -155,7 +169,7 @@ events.forEach(event => {
     spanShadow.appendChild(peopleEvent)
     eventFilm.appendChild(picEvent)
     eventFilm.appendChild(spanShadow)
-    contentFilm.appendChild(eventFilm)
+    linkPage.appendChild(eventFilm)
+    contentFilm.appendChild(linkPage)
     
 })
-

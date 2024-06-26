@@ -26,13 +26,17 @@
             </div>
         </div>  
         <div class="navbar-opt">
-            <div class="home">Home</div>
+            <div class="home">
+                <a href="index.html">Home</a>
+            </div>
             <div class="event">Create Event</div>
-            <div class="location">Location</div>
+            <a href="#city">
+                <div class="location">Location</div>
+            </a>
         </div>
         <div class="navbar-button">
-            <button class="button-login">Log In</button>
-            <button class="button-signup">Sign Up</button>
+            <button class="button-login" id="to-login">Log In</button>
+            <button class="button-signup" id="to-signup">Sign Up</button>
         </div>
     </nav>
 
@@ -74,80 +78,7 @@
     </div>
     
     <!-- List Film Calendar -->
-    <div class="content-film" id="content-film">
-        <!-- <div class="film" id="film">
-            <img src="/assets/image/film1.png" alt="Event-1">
-            <span class="shadow" id="shadow">
-            <div class="day">Wed, 15 Nov, 4:00 PM</div>
-            <div class="title">Sights & Sounds Exhibition</div>
-            <div class="people">
-                <div class="people1"></div>
-                <div class="people2"></div>
-                <div class="people3"></div>
-                <div class="people4">
-                    <span class="layer">62+</span>
-                </div>
-            </div>
-            </span>
-        </div>
-        <div class="film">
-            <img src="/assets/image/film2.png" alt="">
-            <span class="shadow">
-            <div class="day">Thu, 16 Nov, 7:00 PM</div>
-            <div class="title">See it in Gold Class</div>
-            <div class="people">
-                <div class="people1"></div>
-                <div class="people2"></div>
-                <div class="people3"></div>
-                <div class="people4">
-                    <span class="layer">62+</span>
-                </div>
-            </div>
-            </span>
-        </div>
-        <div class="film">
-            <span class="shadow">
-            <div class="day">Wed, 15 Nov, 4:00 PM</div>
-            <div class="title">Sights & Sounds Exhibition</div>
-            <div class="people">
-                <div class="people1"></div>
-                <div class="people2"></div>
-                <div class="people3"></div>
-                <div class="people4">
-                    <span class="layer">62+</span>
-                </div>
-            </div>
-            </span>
-        </div>
-        <div class="film">
-            <span class="shadow">
-            <div class="day">Thu, 16 Nov, 7:00 PM</div>
-            <div class="title">See it in Gold Class</div>
-            <div class="people">
-                <div class="people1"></div>
-                <div class="people2"></div>
-                <div class="people3"></div>
-                <div class="people4">
-                        <span class="layer">62+</span>
-                </div>
-            </div>
-            </span>
-        </div>
-        <div class="film">
-            <span class="shadow">
-            <div class="day">Wed, 15 Nov, 4:00 PM</div>
-            <div class="title">Sights & Sounds Exhibition</div>
-            <div class="people">
-                <div class="people1"></div>
-                <div class="people2"></div>
-                <div class="people3"></div>
-                <div class="people4">
-                    <span class="layer">62+</span>
-                </div>
-            </div>
-        </span>
-        </div> -->
-    </div>
+    <div class="content-film" id="content-film"></div>
 
     <!-- Button row -->
      <div class="row-button">
@@ -156,7 +87,7 @@
      </div>
 
      <!-- City -->
-    <div class="city">
+    <div class="city" id="city">
         <img class="city-background" src="/assets/image/bubble.png" alt="background">
         <div class="content">
         <div class="city-button">
@@ -325,29 +256,9 @@
                     <img src="/assets/image/foot-logo-twit.png" alt="">
                 </div>
             </div>
-            <div class="footer-text" id="footer-1">
-                <!-- <span class="header">Wetick</span>
-                <span>About Us</span>
-                <span>Features</span>
-                <span>Blog</span>
-                <span>Payments</span>
-                <span>Mobile App</span> -->
-            </div>
-            <div class="footer-text" id="footer-2">
-                <!-- <span class="header">Features</span>
-                <span>Booking</span>
-                <span>Create Event</span>
-                <span>Discover</span>
-                <span>Register</span> -->
-            </div>
-            <div class="footer-text" id="footer-3">
-                <!-- <span class="header">Company</span>
-                <span>Partnership</span>
-                <span>Help</span>
-                <span>Terms of Service</span>
-                <span>Privacy Policy</span>
-                <span>Sitemap</span> -->
-            </div>
+            <div class="footer-text" id="footer-1"></div>
+            <div class="footer-text" id="footer-2"></div>
+            <div class="footer-text" id="footer-3"></div>
         </div>
         <div class="copy">
             <span>© 2020 Wetick All Rights Reserved</span>

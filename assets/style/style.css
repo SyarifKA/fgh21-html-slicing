@@ -198,6 +198,7 @@ button {
     width: 44px;
     height: 44px;
     display: flex;
+    justify-content: space-between;
 }
 
 .navbar .navbar-button .avatar .image {
@@ -382,6 +383,11 @@ button {
 
 #menu{
     background-color: transparent;
+}
+
+a{
+    color: unset;
+    text-decoration: none;
 }
 
 /* CSS Sign */
