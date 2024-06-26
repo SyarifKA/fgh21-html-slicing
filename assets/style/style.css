@@ -428,7 +428,7 @@ button {
 }
 
 .container .main .sign-in {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 24px;
     color: #373A42;
 }
@@ -600,22 +600,10 @@ button {
     margin-left: 50px;
     overflow-x: scroll;
 }
-    
-.content-film .film:nth-child(odd) {
-    background-image: url(../image/film1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.content-film .film:nth-child(even) {
-    background-image: url(../image/film2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
                 
 .content-film .film {
     width: 260px;
     height: 376px;
-    background-size: contain;
     border-radius: 20px;
     box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -623,6 +611,15 @@ button {
     color: #fff;
     justify-content: center;
     flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-film .film img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .content-film .film .shadow{
@@ -630,7 +627,7 @@ button {
     height: 376px;
     border-radius: 20px;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 3.17%, #101426 100%);
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -996,6 +993,7 @@ button {
 
 .banner .banner-company .category{
     margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     gap: 60px;
