@@ -448,7 +448,7 @@ a{
 
 
 .container .main .form {
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -481,31 +481,29 @@ a{
     font-size: 14px;
 }
 
-.container .main .forgot {
+.container .main .form .forgot {
     margin-top: 10px;
     font-size: 14px;
     color: #3366FF;
     text-align: right;
 }
 
-.container .main .button {
+.container .main .form .button {
     box-shadow: 0px 8px 10px 0px #2395FF4D;
     border: none;
     width: 100%;
     border-radius: 15px;
     padding: 10px 30px;
-    margin-top: 20px;
 }
 
-.container .main .or-sign {
-    margin-top: 20px;
+.container .main .form .or-sign {
     text-align: center;
     color: #373A42;
     font-size: 14px;
     letter-spacing: 0.5px;
 }
 
-.container .main .logo-alt {
+.container .main .form .logo-alt {
     margin-top: 10px;
     text-align: center;
     display: flex;
@@ -513,14 +511,14 @@ a{
     gap: 10px;
 }
 
-.container .main .logo-alt img {
+.container .main .form .logo-alt img {
     width: 20px;
     height: 20px;
     padding: 10px 30px;
     border-radius: 6px;
 }
 
-.container .main .logo-alt button {
+.container .main .form .logo-alt button {
     border: 1px solid #3366FF;
     border-radius: 6px;
     background-color: #fff;
@@ -761,7 +759,7 @@ a{
     font-size: 12px;
     padding: 6px 30px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .city .content .city-one *{
@@ -779,6 +777,7 @@ a{
     font-size: 36px;
     color: #fff;
     font-weight: 600;
+    margin-left: 40px;
 }
 
 .city .content .city-one .location{
@@ -1527,6 +1526,7 @@ a{
 .profile .profile-content .box-profile .bio .content-bio .edit{
     margin-left: 15px;
     font-size: 14px;
+    color: #3366FF;
 }
 
 .profile .profile-content .box-profile .bio .content-bio div:nth-child(2){

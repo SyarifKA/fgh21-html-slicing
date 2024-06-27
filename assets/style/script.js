@@ -10,6 +10,7 @@ function processData(event) {
         alert('Enter your account to Login')
     }else{
         const alertElement = document.getElementById('alert')
+        alertElement.innerHTML = ''
         alertElement.setAttribute('style', 'padding: 10px; border-radius:10px; color: red; background-color: salmon;')
 
         const text = document.createElement('span')
