@@ -1,3 +1,29 @@
+// Footer
+const footerText = ['footer-1', 'footer-2', 'footer-3']
+
+function addContent(elementId, contentChild) {
+    const container = document.getElementById(elementId)
+    
+    contentChild.forEach(item => {
+        const content = document.createElement('span')
+        content.textContent = item
+        container.appendChild(content)
+        
+        if (item == contentChild[0]) {
+            content.classList.add('header')
+        }
+    })
+}
+
+const contentChild = [['Wetick', 'About Us', 'Features', 'Blog', 'Payments', 'Mobile App'],
+    ['Features', 'Booking', 'Create Event', 'Discover', 'Register'],
+    ['Company', 'Partnership', 'Help', 'Terms of Service', 'Privacy Policy', 'Sitemap']
+]
+
+footerText.forEach((item, index) => {
+    addContent(item, contentChild[index])
+})
+
 // Login
 function processData(event) {
     event.preventDefault()
@@ -50,31 +76,6 @@ btnToSignup.onclick = () => {
     window.location = 'sign-page.html'
 }
 
-// Footer
-function appendElement(elementId, contentChild) {
-    const container = document.getElementById(elementId)
-
-    contentChild.forEach(item => {
-        const content = document.createElement('span')
-        content.textContent = item
-
-        if (item == contentChild[0]) {
-            content.classList.add('header')
-        }
-        container.appendChild(content)
-    })
-}
-
-const contentChild = [['Wetick', 'About Us', 'Features', 'Blog', 'Payments', 'Mobile App'],
-    ['Features', 'Booking', 'Create Event', 'Discover', 'Register'],
-    ['Company', 'Partnership', 'Help', 'Terms of Service', 'Privacy Policy', 'Sitemap']
-]
-
-const footertext = ['footer-1', 'footer-2', 'footer-3']
-
-footertext.forEach((item, index) => {
-    appendElement(item, contentChild[index])
-})
 
 
 // Card

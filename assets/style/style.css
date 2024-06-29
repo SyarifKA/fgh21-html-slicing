@@ -334,6 +334,8 @@ button {
         flex-direction: column;
         width: 100%;
         height: 100%;
+        gap: 50px;
+        padding: 50px 30px !important;
     }
     .content-book .image-seat img{
         width: 100% !important;
@@ -378,6 +380,16 @@ button {
     }
     .profile .profile-content .box-profile .profile-title .profile-button button{
         width: 100% !important;
+    }
+    /* Responsive event detail */
+    .content-book .detail-image-text{
+        display: none !important;
+    }
+    .content-book .detail-text .detail-title{
+        display: none !important;
+    }
+    .content-book .detail-image .box-event .shadow *{
+        visibility: visible !important;
     }
 }
 
@@ -1013,7 +1025,7 @@ a{
     margin-bottom: 100px;
     margin-left: 50px;
     margin-right: 50px;
-    padding-bottom: 50px;
+    padding: 100px;
     width: auto;
     height: 100%;
     border-radius: 30px;
@@ -1022,6 +1034,7 @@ a{
 }
 
 .content-book .image-seat {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1029,15 +1042,13 @@ a{
 }
 
 .content-book .image-seat img {
-    width: 500px;
-    height: 409.5px;
+    width: 100%;
 }
 
 .content-book .order {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    margin-top: 78px;
-    margin-right: 50px;
     width: 100%;
     height: 100%;
 }
@@ -1230,7 +1241,7 @@ a{
     width: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 71px;
+    /* margin-top: 71px; */
     padding: 0 20px;
 }
 
@@ -1672,4 +1683,278 @@ a{
 .profile .profile-content .box-profile .edit-photo .edit-button div{
     font-size: 12px;
     color: rgba(55, 58, 66, 0.75);
+}
+
+/* CSS Event Detail - Page */
+.content-book .detail-image{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 53px;
+}
+
+.content-book .detail-image .box-event{
+    width: 375px;
+    height: 486px;
+    border-radius: 40px;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.content-book .detail-image .box-event > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.content-book .detail-image .box-event .shadow{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 3.17%, #101426 100%);
+    background-blend-mode: multiply;
+    position: absolute;
+    gap: 10px;
+}
+
+.content-book .detail-image .box-event .shadow *{
+    visibility: hidden;
+}
+
+.content-book .detail-image .box-event .shadow > div{
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.content-book .detail-image .box-event .shadow .title-image{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.content-book .detail-image .box-event .shadow .location-image{
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.content-book .detail-image .box-event .shadow .date-image{
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.content-book .detail-image .box-event .shadow .attendees-image{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.content-book .detail-image .box-event .shadow .attendees-image .people {
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
+    
+.content-book .detail-image .box-event .shadow .attendees-image .people > div {
+    position: relative;
+    width: 28px;
+    height: 29px;
+    border-radius: 50%;
+    margin-left: -10px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 29px;
+    box-sizing: border-box;
+}
+    
+.content-book .detail-image .box-event .shadow .attendees-image .people .people1 {
+    background-image: url(../image/people1.png);
+    background-size: cover;
+    border: 1px solid white;
+}
+.content-book .detail-image .box-event .shadow .attendees-image .people .people2 {
+    background-image: url(../image/people2.png);
+    background-size: cover;
+    border: 1px solid white;
+}
+    
+.content-book .detail-image .box-event .shadow .attendees-image .people .people3 {
+    background-image: url(../image/people3.png);
+    background-size: cover;
+    border: 1px solid white;
+}
+
+.content-book .detail-image .box-event .shadow .attendees-image .people .people4 {
+    background-image: url(../image/people4.png);
+    background-size: cover;
+}
+
+.content-book .detail-image .box-event .shadow .attendees-image .people .people4 .layer{
+    display: block;
+    position: absolute;
+    background: linear-gradient(0deg, #ff880075, #ff880075);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.content-book .detail-image-text{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.content-book .detail-image-text button{
+    background-color: transparent;
+}
+
+.content-book .detail-image-text span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content-book > .detail-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.content-book .detail-text .detail-title{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content-book .detail-text .detail-title .title{
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(55, 58, 66, 1);
+    width: 50%;
+}
+
+.content-book .detail-text .detail-title .event-implementation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-book .detail-text .detail-title .event-implementation > div{
+    display: flex;
+    gap: 5px;
+}
+
+.content-book .detail-text .detail-title .attendees-image{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    border-bottom: 1px solid rgba(193, 197, 208, 0.25);
+}
+
+.content-book .detail-text .detail-title .attendees-image .people {
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 26px;
+}
+    
+.content-book .detail-text .detail-title .attendees-image .people div {
+    position: relative;
+    width: 28px;
+    height: 29px;
+    border-radius: 50%;
+    margin-left: -10px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 29px;
+    box-sizing: border-box;
+}
+    
+.content-book .detail-text .detail-title .attendees-image .people .people1 {
+    background-image: url(../image/people1.png);
+    background-size: cover;
+    border: 1px solid white;
+}
+.content-book .detail-text .detail-title .attendees-image .people .people2 {
+    background-image: url(../image/people2.png);
+    background-size: cover;
+    border: 1px solid white;
+}
+    
+.content-book .detail-text .detail-title .attendees-image .people .people3 {
+    background-image: url(../image/people3.png);
+    background-size: cover;
+    border: 1px solid white;
+}
+
+.content-book .detail-text .detail-title .attendees-image .people .people4 {
+    background-image: url(../image/people4.png);
+    background-size: cover;
+}
+
+.content-book .detail-text .detail-title .attendees-image .people .people4 .layer{
+    display: block;
+    position: absolute;
+    background: linear-gradient(0deg, #ff880075, #ff880075);
+    width: 28px;
+    height: 29px;
+    border-radius: 50%;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.content-book .detail-text .event-detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-book .detail-text .event-detail .title{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(55, 58, 66, 1);
+}
+
+.content-book .detail-text .event-detail .paragraph{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(55, 58, 66, 0.75);
+}
+
+.content-book .detail-text .event-detail .read-more{
+    color: rgba(51, 102, 255, 1);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.content-book .detail-text .event-maps{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.content-book .detail-text .event-maps .title{
+    font-size: 20px;
+    color: rgba(55, 58, 66, 1);
+    font-weight: 600;
+}
+
+.content-book .detail-text .button-checkout button{
+    width: 315px;
+    height: 55px;
+    border-radius: 15px;
 }
