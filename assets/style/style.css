@@ -391,6 +391,13 @@ button {
     .content-book .detail-image .box-event .shadow *{
         visibility: visible !important;
     }
+    /* Responsive My Booking */
+    .profile .profile-content .title{
+        flex-direction: column;
+    }
+    .profile .profile-content .title{
+        gap: 25px;
+    }
 }
 
 #menu{
@@ -1499,6 +1506,8 @@ a{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .profile .profile-content .box-profile{
@@ -1996,5 +2005,47 @@ a{
 }
 
 .profile .profile-menu .profile-detail .detail .change-password{
+    color: rgba(51, 102, 255, 1);
+}
+
+/* CSS My Booking */
+.profile .profile-content .title .calendar{
+    background-color: rgba(234, 241, 255, 1);
+    color: rgba(51, 102, 255, 1);
+    font-size: 12px;
+    border-radius: 15px;
+    /* padding: 13px 22px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 125px;
+    height: 50px;
+}
+
+.profile .profile-content .no-ticket{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    margin-top: 136px;
+    margin-bottom: 268px;
+}
+
+.profile .profile-content .no-ticket > div:first-child{
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(55, 58, 66, 1);
+}
+
+.profile .profile-content .no-ticket > div:last-child{
+    display: flex;
+    width: 50%;
+}
+
+.profile .profile-menu .profile-detail .detail .my-booking{
     color: rgba(51, 102, 255, 1);
 }
