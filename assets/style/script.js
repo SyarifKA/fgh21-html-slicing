@@ -122,7 +122,7 @@ const events = [
 
 events.forEach(event => {
     const linkPage = document.createElement('a')
-    linkPage.setAttribute('href', 'booking-page.html')
+    linkPage.setAttribute('href', 'event-detail.html')
 
     const eventFilm = document.createElement('div')
     eventFilm.classList.add('film')
