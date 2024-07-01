@@ -2049,3 +2049,7 @@ a{
 .profile .profile-menu .profile-detail .detail .my-booking{
     color: rgba(51, 102, 255, 1);
 }
+
+.profile .profile-menu .profile-detail .detail .my-wishlist{
+    color: rgba(51, 102, 255, 1);
+}
