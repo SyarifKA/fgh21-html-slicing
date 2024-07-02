@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Wishlist</title>
+    <title>Create Event</title>
     <link rel="stylesheet" href="/assets/style/style.css">
 </head>
 <body>
@@ -83,9 +83,9 @@
                 </div>
                 <div class="detail">
                     <div>
-                        <img src="/assets/image/create-event.png" alt="">
+                        <img src="/assets/image/create-event-blue.png" alt="">
                     </div>
-                    <div>Create Event</div>
+                    <div class="create-event">Create Event</div>
                 </div>
                 <div class="detail">
                     <div>
@@ -95,9 +95,9 @@
                 </div>
                 <div class="detail">
                     <div>
-                        <img src="/assets/image/wishlist-logo-blue.png" alt="">
+                        <img src="/assets/image/wishlist-logo.png" alt="">
                     </div>
-                    <div class="my-wishlist">My Wishlist</div>
+                    <div>My Wishlist</div>
                 </div>
                 <div class="detail">
                     <div>
@@ -115,7 +115,10 @@
         </div>
         <div class="profile-content">
             <div class="title">
-                <div>My Wishlist</div>
+                <div>Manage Event</div>
+                <button class="calendar" id="button-popUp">
+                    <span>Create</span>
+                </button>
             </div>
             <div class="no-ticket">
                 <div>No tickets bought</div>
@@ -123,6 +126,56 @@
             </div>
         </div>
      </section>
+
+     <!-- Pop Up Create Event -->
+      <section class="event-pop-up" id="event-pop-up">
+        <div class="box-pop-up">
+            <div class="title">
+                <span>Create Event</span>
+            </div>
+            <form action="" class="form-pop-up">
+                <div class="box1">
+                    <div class="row">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Input Name Event ...">
+                        </div>
+                        <div>
+                            <label for="category">Category</label>
+                            <input type="text" id="category" placeholder="Select Category">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label for="location">Location</label>
+                            <input type="text" id="location" placeholder="Select Location">
+                        </div>
+                        <div>
+                            <label for="date">Date Time Show</label>
+                            <input type="date" id="date">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label for="price">Price</label>
+                            <input type="text" id="price" placeholder="Input Price ...">
+                        </div>
+                        <div>
+                            <label for="image">image</label>
+                            <input type="text" id="image" placeholder="Chose File ...">
+                        </div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <label for="detail">Detail</label>
+                    <input type="text" id="detail" placeholder="Input Detail ...">
+                </div>
+                <div class="pop-up-button">
+                    <button>Save</button>
+                </div>
+            </form>
+        </div>
+      </section>
 
 
      <!-- Footer -->

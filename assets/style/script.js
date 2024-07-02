@@ -1,3 +1,4 @@
+
 // Footer
 const footerText = ['footer-1', 'footer-2', 'footer-3']
 
@@ -16,14 +17,27 @@ function addContent(elementId, contentChild) {
 }
 
 const contentChild = [['Wetick', 'About Us', 'Features', 'Blog', 'Payments', 'Mobile App'],
-    ['Features', 'Booking', 'Create Event', 'Discover', 'Register'],
-    ['Company', 'Partnership', 'Help', 'Terms of Service', 'Privacy Policy', 'Sitemap']
+['Features', 'Booking', 'Create Event', 'Discover', 'Register'],
+['Company', 'Partnership', 'Help', 'Terms of Service', 'Privacy Policy', 'Sitemap']
 ]
 
 footerText.forEach((item, index) => {
     addContent(item, contentChild[index])
 })
 
+// Pop Up Create Event
+const showPopUp = document.getElementById('button-popUp')
+showPopUp.onclick = () => {
+    const popUp = document.getElementById('event-pop-up')
+    popUp.setAttribute('style', 'visibility: visible')
+}
+
+window.onclick = function (event) {
+    const closePopUp = document.getElementById("event-pop-up");
+    if (event.target == closePopUp) {
+      closePopUp.style.visibility = "hidden";
+    }
+}
 // Login
 function processData(event) {
     event.preventDefault()
@@ -175,3 +189,4 @@ events.forEach(event => {
     contentFilm.appendChild(linkPage)
     
 })
+

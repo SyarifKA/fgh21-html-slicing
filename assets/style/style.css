@@ -2053,3 +2053,109 @@ a{
 .profile .profile-menu .profile-detail .detail .my-wishlist{
     color: rgba(51, 102, 255, 1);
 }
+
+/* CSS Create Event */
+.profile .profile-menu .profile-detail .detail .create-event{
+    color: rgba(51, 102, 255, 1);
+}
+
+.event-pop-up{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    visibility: hidden;
+}
+
+.event-pop-up .box-pop-up{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 60%;
+    height: auto;
+    padding: 30px 50px;
+    gap: 20px;
+    border-radius: 30px;
+}
+
+.event-pop-up .box-pop-up .title{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(55, 58, 66, 1);
+}
+
+.event-pop-up .box-pop-up .form-pop-up{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.event-pop-up .box-pop-up .form-pop-up .box1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.event-pop-up .box-pop-up .form-pop-up .box1 .row{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.event-pop-up .box-pop-up .form-pop-up .box1 .row > div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.event-pop-up .box-pop-up .form-pop-up .box1 .row > div > input{
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid rgba(193, 197, 208, 1);
+    color: rgba(119, 119, 119, 1);
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.event-pop-up .box-pop-up .form-pop-up .box2{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.event-pop-up .box-pop-up .form-pop-up .box2 > input{
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+    border: 1px solid rgba(193, 197, 208, 1);
+    color: rgba(119, 119, 119, 1);
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.event-pop-up .box-pop-up .form-pop-up .pop-up-button{
+    display: flex;
+    justify-content: end;
+}
+
+.event-pop-up .box-pop-up .form-pop-up .pop-up-button button{
+    width: 315px;
+    height: 61px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0px 8px 10px 0px rgba(35, 149, 255, 0.3);
+}
