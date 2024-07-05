@@ -27,17 +27,20 @@ footerText.forEach((item, index) => {
 
 // Pop Up Create Event
 const showPopUp = document.getElementById('button-popUp')
-showPopUp.onclick = () => {
+showPopUp.onclick = function(event) {
     const popUp = document.getElementById('event-pop-up')
-    popUp.setAttribute('style', 'visibility: visible')
+    if (event.target == showPopUp) {
+        popUp.setAttribute('style', 'visibility: visible')
+    }
 }
 
 window.onclick = function (event) {
-    const closePopUp = document.getElementById("event-pop-up");
+    const closePopUp = document.getElementById("event-pop-up")
     if (event.target == closePopUp) {
-      closePopUp.style.visibility = "hidden";
+      closePopUp.style.visibility = "hidden"
     }
 }
+
 // Login
 function processData(event) {
     event.preventDefault()
@@ -90,10 +93,7 @@ btnToSignup.onclick = () => {
     window.location = 'sign-page.html'
 }
 
-
-
 // Card
-
 const contentFilm = document.getElementById('content-film')
 
 const events = [
@@ -187,6 +187,5 @@ events.forEach(event => {
     eventFilm.appendChild(spanShadow)
     linkPage.appendChild(eventFilm)
     contentFilm.appendChild(linkPage)
-    
 })
 
